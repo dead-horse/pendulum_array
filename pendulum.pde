@@ -12,8 +12,6 @@ class Pendulum {
   Pendulum(float zPosition, float l) {
     radius = 20;
     length = l;
-    println(zPosition);
-    println(l);
     startPoint = new PVector(width / 2, 0, zPosition);
     ballCenter = new PVector(width / 2, l, zPosition);
     velocity = new PVector(sqrt(l) / 2, 0, 0);
