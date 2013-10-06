@@ -1,4 +1,3 @@
-
 ArrayList pendulumArrays;
 
 void steupPendulums() {
@@ -24,5 +23,4 @@ void draw() {
     p.move();
     p.render();
   }
-  stroke(255);
 }
