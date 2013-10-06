@@ -3,8 +3,8 @@ ArrayList pendulumArrays;
 
 void steupPendulums() {
   pendulumArrays = new ArrayList<Pendulum>();
-  for (int i = 0; i < 1; i++) {
-    pendulumArrays.add(new Pendulum(-100.0 * i, 400.0 - 30 * i));
+  for (int i = 0; i < 15; i++) {
+    pendulumArrays.add(new Pendulum(-30.0 * i, 500.0 - 10 * i));
   }
   
 }
@@ -12,7 +12,7 @@ void steupPendulums() {
 void setup() {
   background(0, 0, 0);
   size(800, 600, P3D);
-  frameRate(30);
+  frameRate(60);
   smooth();  
   steupPendulums();
 }
