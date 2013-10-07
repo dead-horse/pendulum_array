@@ -61,11 +61,10 @@ class Pendulum {
     newRope.setMag(length);
     ballCenter = startPoint.get();
     ballCenter.add(newRope);
-    
-    //fix velocity
-    maxVelocity = maxVelocity * 0.99999;
+
     if (velocity.mag() > maxVelocity) {
-      velocity.setMag(maxVelocity);
-    }
+      velocity.x = velocity.x > 0 ? maxVelocity : -1 * maxVelocity;
+      velocity.y = 0.0;
+    }    
   }
 }
