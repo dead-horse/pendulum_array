@@ -22,6 +22,7 @@ void setup() {
 }
 
 void draw() {
+  camera(mouseX, mouseY, (height/2.0) / tan(PI*30.0 / 180.0), width/2.0, height/2.0, 0, 0, 1, 0);
   background(0, 0, 0);
   for (int i = 0; i < pendulumArrays.size(); i++) {
     Pendulum p = (Pendulum)pendulumArrays.get(i);
